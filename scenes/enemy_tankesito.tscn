@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ph55ubef2d1c"]
+
+[ext_resource type="Texture2D" uid="uid://c6h5rwdufpbjt" path="res://sprites/enemy-tank.png" id="1_2tt6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3mqx"]
+size = Vector2(66, 79)
+
+[node name="enemy_tankesito" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 0)
+scale = Vector2(0.13, 0.146)
+texture = ExtResource("1_2tt6e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_a3mqx")

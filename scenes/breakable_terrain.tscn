@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2v5vq4kndjee"]
+
+[ext_resource type="Texture2D" uid="uid://bjmeyjofjeu4m" path="res://sprites/bricks.png" id="1_ly4bq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qgdd2"]
+size = Vector2(10.8824, 9.41176)
+
+[node name="breakable_terrain" type="StaticBody2D" groups=["breakable"]]
+position = Vector2(1, -1)
+scale = Vector2(1.5, 1.5)
+collision_layer = 15
+collision_mask = 15
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.441176, 0.588235)
+shape = SubResource("RectangleShape2D_qgdd2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-0.5, 0.5)
+scale = Vector2(0.625, 0.555556)
+texture = ExtResource("1_ly4bq")
+hframes = 5
+vframes = 5
