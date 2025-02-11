@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://ph55ubef2d1c"]
+[gd_scene load_steps=4 format=3 uid="uid://ph55ubef2d1c"]
 
 [ext_resource type="Texture2D" uid="uid://c6h5rwdufpbjt" path="res://sprites/enemy-tank.png" id="1_2tt6e"]
+[ext_resource type="Script" path="res://scenes/enemy_tankesito.gd" id="1_8phv6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a3mqx"]
 size = Vector2(66, 79)
 
 [node name="enemy_tankesito" type="CharacterBody2D"]
+script = ExtResource("1_8phv6")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-3.8147e-06, 0)
@@ -15,3 +17,11 @@ texture = ExtResource("1_2tt6e")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_a3mqx")
+
+[node name="Cannon" type="Node2D" parent="."]
+position = Vector2(-1, -47)
+scale = Vector2(4, 4)
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(6, -990)
+collision_mask = 7

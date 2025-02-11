@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7wxd3"]
 size = Vector2(230, 396)
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_02qbo")
 
@@ -18,4 +18,4 @@ position = Vector2(3, 2)
 shape = SubResource("RectangleShape2D_7wxd3")
 
 [node name="Cannon" type="Node2D" parent="."]
-position = Vector2(0, -230)
+position = Vector2(3.33333, -203.333)
