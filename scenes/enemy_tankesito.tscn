@@ -23,5 +23,5 @@ position = Vector2(-1, -47)
 scale = Vector2(4, 4)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-target_position = Vector2(6, -990)
+target_position = Vector2(6, -1200)
 collision_mask = 7
